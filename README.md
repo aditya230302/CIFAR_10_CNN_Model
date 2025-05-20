@@ -27,6 +27,26 @@ The CIFAR-10 and CIFAR-100 datasets are labeled subsets of the 80 million tiny i
 *   `kernel-size` - a filter which will move through the image and extract the features of the part using a `dot` product. It basically means the dimension of the filter aka kernel which is `height` X `width`
 
 ---
+# Libraries
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+import os
+
+import tensorflow as tf
+from tensorflow.keras import datasets, layers, models
+
+"""
+datasets : CIFAR-10 and CIFAR-100
+models   : helps build Sequential or functional models
+layers   : provides Conv2D, MaxPooling@d, Flatten, Dense, etc.
+"""
+```
+
+---
 # Model Building
 ```python
 model = models.Sequential()
